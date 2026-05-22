@@ -18,17 +18,4 @@
         border-radius: var(--radius);
     }
 
-    .directory.grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .directory.list .card img {
-        width: 140px;
-    }
-}
-
-@media screen and (min-width: 56rem){
-    .directory.grid{
-        grid-template-columns: repeat(3, 1fr);
-    }
 }

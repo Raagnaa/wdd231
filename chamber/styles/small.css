@@ -70,6 +70,21 @@ header {
     text-decoration: none;
 }
 
+#main-nav a[aria-current="page"] {
+    background: rgba(184, 134, 11, 0.3);
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    color: var(--primary);
+}
+
 body {
     margin: 0;
     font-family: "Open Sans", sans-serif;
@@ -78,44 +93,109 @@ body {
     line-height: 1.6;
 }
 
-.directory.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
+.view-buttons {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    background: var(--primary);
+    text-align: center;
+    border-radius: var(--radius);
 }
 
-.card {
+.view-buttons button {
+    margin: 0 0.25rem;
+}
+
+#directory.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 0.5rem;
+    align-items: stretch;
+}
+
+#directory.grid .card {
     background: var(--white);
+    border: 1px solid rgb(0 0 0 / 10%);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
+    padding: 0.5rem;
+    text-align: center;
+}
+
+#directory.grid .card > * {
+    margin: 0.25rem auto;
+}
+
+#directory.grid .card img {
+    width: 100%;
+    max-width: 280px;
+    height: 160px;
+    object-fit: cover;
+    border: 1px solid var(--white);
+    box-shadow: var(--shadow);
+}
+
+#directory.grid .card h2 {
+    font-size: 1.15rem;
+}
+
+#directory.grid .card-phone,
+#directory.grid .card-web {
+    font-size: 0.9rem;
+}
+
+#directory.grid .card-details {
+    display: block;
+}
+
+#directory.list {
+    display: flex;
+    flex-direction: column;
+}
+
+#directory.list .card {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    align-items: center;
+    margin: 0;
+    padding: 0.35rem 0.75rem;
+    background: #e8e8e8;
+    border-bottom: 1px solid #bbb;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+#directory.list .card > * {
+    margin: 0 0.5rem;
+}
+
+#directory.list .card img {
+    display: none;
+}
+
+#directory.list .card h2 {
+    font-size: 1rem;
+    margin: 0;
+    text-align: left;
+}
+
+#directory.list .card-phone,
+#directory.list .card-web {
+    margin: 0;
+    font-size: 0.85rem;
+}
+
+#directory.list .card-details {
+    display: none;
+}
+
+#directory.list .card:nth-child(even) {
+    background: #d4d4d4;
 }
 
 img {
     border-style: none;
     max-width: 100%;
     display: block;
-}
-
-.directory.grid .card img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-}
-
-.directory.list .card img {
-    width: 100px;
-    flex-shrink: 0;
-    object-fit: cover;
-}
-
-.directory.list {
-    display: flex;
-    flex-direction: column;
-}
-
-.directory.list .card {
-    display: flex;
-    border-bottom: 1px solid #ccc;
 }
 
 footer {
@@ -133,26 +213,28 @@ footer a {
     color: #fbd38d;
 }
 
-#grid-btn,
-#list-btn {
-    margin-right: .5rem;
-    padding: .5rem 1rem;
-    border: 2px solid var(--primary);
+.view-buttons button {
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--secondary);
     background: var(--white);
     color: var(--primary);
-    font-weight: 600;
+    font-weight: 700;
     border-radius: var(--radius);
     cursor: pointer;
 }
 
-#grid-btn.active,
-#list-btn.active {
-    background: var(--primary);
-    color: var(--white);
+.view-buttons button.active {
+    background: var(--secondary);
+    color: #1a1a1a;
 }
 
-.card-body {
-    padding: 1rem;
+.card h2 {
+    font-family: "Montserrat", sans-serif;
+    color: var(--primary);
+}
+
+.card-details {
+    padding-top: 0.35rem;
 }
 
 .badge {
@@ -181,14 +263,12 @@ footer a {
     color: #1a1a1a;
 }
 
-.card-body .tagline {
+.card-details .tagline {
     font-style: italic;
     color: var(--accent);
+    font-size: 0.9rem;
 }
 
-.card-body h2 {
-    margin: 0 0 0.35rem;
-    font-size: 1.15rem;
-    font-family: "Montserrat", sans-serif;
-    color: var(--primary);
+.card-details .address {
+    font-size: 0.85rem;
 }

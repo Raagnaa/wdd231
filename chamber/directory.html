@@ -13,7 +13,7 @@
     <meta property="og:image" content="https://raagnaa.github.io/wdd231/chamber/images/og-directory.svg">
     <meta property="og:url" content="https://raagnaa.github.io/wdd231/chamber/directory.html">
 
-    <link rel="stylesheet" href="styles/normalsize.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -45,8 +45,10 @@
         <h1>Member Directory</h1>
         <p>Local business for Matamoros owners and new residents.</p>
 
-        <button type="button" id="grid-btn" class="active">Grid</button>
-        <button type="button" id="list-btn">List</button>
+        <div class="view-buttons">
+            <button type="button" id="grid-btn" class="active">Grid</button>
+            <button type="button" id="list-btn">List</button>
+        </div>
 
         <section id="directory" class="grid" aria-label="Chamber member listings">
         </section>
