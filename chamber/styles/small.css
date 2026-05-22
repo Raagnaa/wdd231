@@ -101,10 +101,6 @@ body {
     border-radius: var(--radius);
 }
 
-.view-buttons button {
-    margin: 0 0.25rem;
-}
-
 #directory.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -214,6 +210,7 @@ footer a {
 }
 
 .view-buttons button {
+    margin: 0 0.25rem;
     padding: 0.5rem 1rem;
     border: 2px solid var(--secondary);
     background: var(--white);
