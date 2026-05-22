@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory | Matamoros Chamber</title>
+    <meta name="description" content="Member business for Matamoros Chamber of Commerce">
+    <meta property="og:title" content="Matamoros Chamber Directory">
+    <meta property="og:description" content="Browse local chamber member business in Matamoros">
+    <meta property="og:image" content="https://raagnaa.github.io/wdd231/chamber/images/og-directory.svg">
+    <meta property="og:url" content="https://raagnaa.github.io/wdd231/chamber/directory.html">
+
+    <link rel="stylesheet" href="styles/normalsize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <script src="scripts/directory.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <a class="logo" href="index.html">Matamoros Chamber</a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html" aria-current="page">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Member Directory</h1>
+        <p>Local business for Matamoros owners and new residents.</p>
+
+        <button type="button" id="grid-btn" class="active">Grid</button>
+        <button type="button" id="list-btn">List</button>
+
+        <section id="directory" class="grid" aria-label="Chamber member listings">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Matamoros Chamber of Commerce</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+
+</body>
+
+</html>

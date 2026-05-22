@@ -1,0 +1,34 @@
+@media screen and (min-width: 37.5rem) {
+    .menu-toggle {
+        display: none;
+    }
+
+    #main-nav {
+        display: block;
+        position: static;
+    }
+
+    #main-nav ul {
+        display: flex;
+        gap: .5rem;
+    }
+
+    #main-nav a {
+        padding: .5rem .85rem;
+        border-radius: var(--radius);
+    }
+
+    .directory.grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .directory.list .card img {
+        width: 140px;
+    }
+}
+
+@media screen and (min-width: 56rem){
+    .directory.grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
