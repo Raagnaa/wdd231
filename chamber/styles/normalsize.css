@@ -20,11 +20,8 @@ html {
 
 /**
  * Remove the margin in all browsers.
+ * (body margin set in small.css)
  */
-
-body {
-    margin: 0;
-}
 
 /**
  * Render the `main` element consistently in IE.
@@ -160,11 +157,8 @@ sup {
 
 /**
  * Remove the border on images inside links in IE 10.
+ * (img rules set in small.css)
  */
-
-img {
-    border-style: none;
-}
 
 /* Forms
    ========================================================================== */
