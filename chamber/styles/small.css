@@ -303,13 +303,13 @@ footer a {
     width: 100%;
     max-width: 200px;
     height: 120px;
-    object-fit: center;
+    object-fit: cover;
     margin: 0 auto .5rem;
 }
 
-.spotlight-card h3  {
+.spotlight-card h3 {
     margin: 0 0 .35rem;
-    font-family: "Monserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: var(--primary);
     font-size: 1rem;
 }
