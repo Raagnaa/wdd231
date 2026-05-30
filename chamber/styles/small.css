@@ -333,5 +333,5 @@ footer a {
     background: var(--white);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
