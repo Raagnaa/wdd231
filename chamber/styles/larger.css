@@ -18,4 +18,12 @@
         border-radius: var(--radius);
     }
 
+    .home-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+    #spotlight-cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

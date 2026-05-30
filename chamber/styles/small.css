@@ -117,7 +117,7 @@ body {
     text-align: center;
 }
 
-#directory.grid .card > * {
+#directory.grid .card>* {
     margin: 0.25rem auto;
 }
 
@@ -160,7 +160,7 @@ body {
     box-shadow: none;
 }
 
-#directory.list .card > * {
+#directory.list .card>* {
     margin: 0 0.5rem;
 }
 
@@ -268,4 +268,70 @@ footer a {
 
 .card-details .address {
     font-size: 0.85rem;
+}
+
+.hero img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.hero-content {
+    padding: 1rem;
+    text-align: center;
+}
+
+.hero-content h1 {
+    margin: 0 0 0.5rem;
+}
+
+#spotlight-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    padding: 1rem;
+    background: var(--background);
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: var(--radius);
+    text-align: center;
+}
+
+.spotlight-card img {
+    width: 100%;
+    max-width: 200px;
+    height: 120px;
+    object-fit: center;
+    margin: 0 auto .5rem;
+}
+
+.spotlight-card h3  {
+    margin: 0 0 .35rem;
+    font-family: "Monserrat", sans-serif;
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+.cta {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background: var(--secondary);
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: var(--radius);
+    margin-top: .75rem;
+    margin-bottom: 0;
+}
+
+.events,
+.weather,
+.spotlights {
+    padding: 1rem;
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
 }
