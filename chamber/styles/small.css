@@ -72,6 +72,8 @@ header {
 
 #main-nav a[aria-current="page"] {
     background: rgba(184, 134, 11, 0.3);
+    color: var(--primary);
+    font-weight: 700;
 }
 
 main {
