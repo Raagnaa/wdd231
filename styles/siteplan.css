@@ -1,0 +1,97 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f4f1ea;
+    color: #1a1a1a;
+    margin: 20px;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #2d4a2e;
+    color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+    color: #2d4a2e;
+}
+
+section {
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #8b4513;
+}
+
+footer {
+    text-align: center;
+    color: #2d4a2e;
+    margin-top: 20px;
+}
+
+.color-box {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.green {
+    background-color: #2d4a2e;
+}
+
+.tan {
+    background-color: #f4f1ea;
+}
+
+.brown {
+    background-color: #8b4513;
+}
+
+.heading-sample {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.3rem;
+    color: #2d4a2e;
+}
+
+.body-sample {
+    font-family: "Open Sans", sans-serif;
+}
+
+.wireframe {
+    background-color: #f4f1ea;
+    border: 2px solid #2d4a2e;
+    padding: 10px;
+}
+
+.box {
+    border: 2px dashed #8b4513;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.big {
+    padding: 25px;
+}
+
+.desktop .row .box {
+    width: 48%;
+    display: inline-block;
+    margin-right: 2%;
+    vertical-align: top;
+}
+
+.desktop .row .box:last-child {
+    margin-right: 0;
+}
