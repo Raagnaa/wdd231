@@ -71,7 +71,7 @@ header {
 }
 
 #main-nav a[aria-current="page"] {
-    background: rgba(184, 134, 11, 0.3);
+    background: var(--background);
     color: var(--primary);
     font-weight: 700;
 }
@@ -404,9 +404,34 @@ footer a {
     border: 1px solid rgb(0 0 0 / 10%);
     border-radius: var(--radius);
     text-align: center;
+    animation: cardFadeIn .6s ease-in-out both;
 }
 
-.info-link{
+.membership-cards .card:nth-child(2) {
+    animation-delay: .15s;
+}
+
+.membership-cards .level-card:nth-child(3) {
+    animation-delay: .3s;
+}
+
+.membership-cards .level-card:nth-child(4) {
+    animation-delay: .45s;
+}
+
+@keyframes cardFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(16px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.info-link {
     padding: .4rem .8rem;
     background: var(--primary);
     color: var(--white);
