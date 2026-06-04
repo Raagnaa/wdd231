@@ -335,3 +335,78 @@ footer a {
     box-shadow: var(--shadow);
     margin-bottom: 1rem;
 }
+
+.join-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.membership-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.join-form-section {
+    padding: 1rem;
+    background: var(--white);
+    border-radius: var(--white);
+    box-shadow: var(--shadow);
+}
+
+#join-form label,
+#join-form input,
+#join-form select,
+#join-form button {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+
+#join-form label {
+    margin-top: .75rem;
+    font-weight: 600;
+}
+
+#join-form lavel:first-of-type {
+    margin-top: 0;
+}
+
+#join-form input,
+#join- select {
+    margin-bottom: .25rem;
+    padding: .5rem;
+    border: 1px solid #ccc;
+    border-radius: var(--radius);
+}
+
+#join-form button[type="submit"] {
+    margin-top: 1rem;
+    padding: .6rem 1.2rem;
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    font-weight: 700;
+    border-radius: var(--radius);
+    cursor: pointer;
+    width: auto;
+}
+
+.level-card {
+    padding: 1rem;
+    background: var(--white);
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: var(--radius);
+    text-align: center;
+}
+
+.info-link{
+    padding: .4rem .8rem;
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: var(--radius);
+    cursor: pointer;
+}

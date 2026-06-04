@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <title>Join | Matamoros Chamber</title>
+    <meta name="description" content="Matamoros Chamber of Commerce Member, committed to business success">
+    <meta name="author" content="Emmanuel Garcia">
+    <meta property="og:title" content="Join | Matamoros Chamber">
+    <meta property="og:description" content="Browse local Chamber member businesses in Matamoros, Mexico today">
+    <meta property="og:image" content="https://raagnaa.github.io/wdd231/chamber/images/og-index.svg">
+    <meta property="og:url" content="https://raagnaa.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <script src="scripts/join.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <a class="logo" href="index.html">Matamoros Chamber</a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html" aria-current="page">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="join-layout">
+        <section class="join-form-section">
+            <h1>Membership Application</h1>
+            <form action="thankyou.html" method="get" id="join-form">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" required title="First Name">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lname" required title="Last Name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required title="Email">
+
+                <label for="phone">Mobile Phone</label>
+                <input type="tel" id="phone" name="phone" required title="Mobile Phone">
+
+                <label for="business">Business Name</label>
+                <input type="text" id="business" name="business" required title="Business name">
+
+                <label for="membership">Membership Level</label>
+                <select id="membership" name="membership" required title="Membership level">
+                    <option value="">Choose a level</option>
+                    <option value="np">NP Membership (Non-Profit)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+
+                <button type="submit">Submit Application</button>
+
+            </form>
+        </section>
+
+        <section class="membership-cards">
+            <article class="level-card">
+                <h2>NP Membership</h2>
+                <p>Non-Profit organizations. No fee.</p>
+                <button type="button" class="info-link" data-dialog="modal-np">View Benefits</button>
+            </article>
+            <article class="level-card">
+                <h2>Bronze Membership</h2>
+                <p>15$ Dollars</p>
+                <button type="button" class="info-link" data-dialog="modal-bronze">View Benefits</button>
+            </article>
+            <article class="level-card">
+                <h2>Silver Membership</h2>
+                <p>40$ Dollars</p>
+                <button type="button" class="info-link" data-dialog="modal-silver">View Benefits</button>
+            </article>
+            <article class="level-card">
+                <h2>Gold Membership</h2>
+                <p>60$ Dollars</p>
+                <button type="button" class="info-link" data-dialog="modal-gold">View Benefits</button>
+            </article>
+        </section>
+    </main>
+
+    <dialog id="modal-np" aria-labelledby="np-title">
+        <h2 id="np-title">NP Membership Benefits</h2>
+        <ul>
+            <li>Community listing</li>
+            <li>Newsletter access</li>
+        </ul>
+        <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="modal-bronze" aria-labelledby="bronze-title">
+        <h2 id="bronze-title">Bronze Membership Benefits</h2>
+        <ul>
+            <li>Community listing</li>
+            <li>Newsletter access</li>
+        </ul>
+        <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="modal-silver" aria-labelledby="silver-title">
+        <h2 id="silver-title">Silver Membership Benefits</h2>
+        <ul>
+            <li>Community listing</li>
+            <li>Newsletter access</li>
+        </ul>
+        <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <dialog id="modal-gold" aria-labelledby="gold-title">
+        <h2 id="gold-title">Gold Membership Benefits</h2>
+        <ul>
+            <li>Community listing</li>
+            <li>Newsletter access</li>
+        </ul>
+        <button type="button" class="close-modal">Close</button>
+    </dialog>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Matamoros Chamber of Commerce</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+
+</body>
+
+</html>

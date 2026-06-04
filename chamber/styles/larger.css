@@ -23,7 +23,21 @@
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
     }
-    #spotlight-cards{
+
+    #spotlight-cards {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 56rem) {
+    .join-layout{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        gap: 2rem;
+    }
+
+    .membership-cards{
+        grid-template-columns: 1fr 1fr;
     }
 }
