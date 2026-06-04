@@ -352,14 +352,15 @@ footer a {
 .join-form-section {
     padding: 1rem;
     background: var(--white);
-    border-radius: var(--white);
+    border-radius: var(--radius);
     box-shadow: var(--shadow);
 }
 
 #join-form label,
 #join-form input,
 #join-form select,
-#join-form button {
+#join-form button,
+#join-form textarea {
     display: block;
     width: 100%;
     max-width: 100%;
@@ -370,19 +371,20 @@ footer a {
     font-weight: 600;
 }
 
-#join-form lavel:first-of-type {
+#join-form label:first-of-type {
     margin-top: 0;
 }
 
+#join-form textarea,
 #join-form input,
-#join- select {
+#join-form select {
     margin-bottom: .25rem;
     padding: .5rem;
     border: 1px solid #ccc;
     border-radius: var(--radius);
 }
 
-#join-form button[type="submit"] {
+#join-form input[type="submit"] {
     margin-top: 1rem;
     padding: .6rem 1.2rem;
     background: var(--primary);
