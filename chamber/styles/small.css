@@ -458,10 +458,6 @@ footer a {
     grid-area: intro;
 }
 
-.visit-banner {
-    grid-area: visit;
-}
-
 .demographics {
     grid-area: demo;
 }
@@ -474,8 +470,7 @@ footer a {
     grid-area: gallery;
 }
 
-.discover-grid section,
-.visit-banner {
+.discover-grid section {
     background: var(--white);
     padding: 1rem;
     border-radius: var(--radius);
@@ -483,10 +478,14 @@ footer a {
 }
 
 .visit-banner {
+    grid-area: visit;
     background: var(--accent);
     color: var(--white);
     font-weight: 600;
     text-align: center;
+    padding: 1rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
 }
 
 .discover-grid h1,
