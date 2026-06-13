@@ -47,25 +47,26 @@
         grid-template-areas:
             "intro intro"
             "visit visit"
-            "demo features"
-            "gallery gallery";
+            "cards cards";
         grid-template-columns: 1fr 1fr;
         gap: 1.25rem;
         padding: 1.5rem;
     }
 
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .cards {
+        grid-template-areas:
+            "c1 c2"
+            "c3 c4"
+            "c5 c6"
+            "c7 c8";
+        grid-template-columns: 1fr 1fr;
     }
 
-    .gallery-grid img {
-        width: 100%;
-        min-height: 140px;
-        object-fit: cover;
+    .place-card img {
         transition: transform 0.3s ease, filter 0.3s ease;
     }
 
-    .gallery-grid img:hover {
+    .place-card img:hover {
         transform: scale(1.03);
         filter: brightness(1.1);
     }
@@ -75,26 +76,26 @@
     .discover-grid {
         grid-template-areas:
             "intro intro visit"
-            "demo features features"
-            "gallery gallery gallery";
+            "cards cards cards";
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1.5rem;
         padding: 1.5rem;
         width: 100%;
     }
 
-    .gallery-grid {
-        grid-template-columns: repeat(4, 1fr);
+    .cards {
+        grid-template-areas:
+            "c1 c1 c2"
+            "c3 c4 c5"
+            "c6 c7 c8";
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .gallery-grid img {
-        width: 100%;
-        min-height: 160px;
-        object-fit: cover;
+    .place-card img {
         transition: transform .3s ease, filter .3s ease;
     }
 
-    .gallery-grid img:hover {
+    .place-card img:hover {
         transform: scale(1.05);
         filter: brightness(1.15);
     }

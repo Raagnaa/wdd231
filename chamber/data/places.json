@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Gateway International Bridge",
+        "address": "Av. Puente Internacional, Matamoros, TM 87340",
+        "description": "Main border crossing linking Matamoros to Brownsville, Texas for trade and travel.",
+        "image": "gateway.webp",
+        "link": "https://en.wikipedia.org/wiki/Gateway_International_Bridge"
+    },
+    {
+        "name": "Mercado Centro",
+        "address": "Calle Morelos, Downtown Matamoros, TM 87300",
+        "description": "Traditional downtown market with local food, crafts, and everyday shopping.",
+        "image": "market_center.webp",
+        "link": "https://example.com/mercado-centro"
+    },
+    {
+        "name": "Historic Downtown",
+        "address": "Centro Historico, Matamoros, TM 87300",
+        "description": "Colonial-era streets, plazas, and local businesses near the city center.",
+        "image": "downtown.webp",
+        "link": "https://example.com/downtown"
+    },
+    {
+        "name": "Plaza Principal",
+        "address": "Zaragoza y Morelos, Matamoros, TM 87300",
+        "description": "Central gathering place for community events, festivals, and weekend markets.",
+        "image": "plaza.webp",
+        "link": "https://example.com/plaza"
+    },
+    {
+        "name": "Rio Grande Riverfront",
+        "address": "Rio Bravo Corridor, Matamoros, TM",
+        "description": "Scenic views along the river border and access to cross-border commerce zones.",
+        "image": "river.webp",
+        "link": "https://example.com/riverfront"
+    },
+    {
+        "name": "Parque Cultural",
+        "address": "Blvd. Adolfo Lopez Mateos, Matamoros, TM",
+        "description": "Green space for families, outdoor concerts, and local recreation programs.",
+        "image": "park.webp",
+        "link": "https://example.com/parque"
+    },
+    {
+        "name": "Regional History Museum",
+        "address": "Centro, Matamoros, TM 87300",
+        "description": "Exhibits on border history, local culture, and the growth of Matamoros.",
+        "image": "museum.webp",
+        "link": "https://example.com/museum"
+    },
+    {
+        "name": "Industrial Corridor",
+        "address": "Carretera Reynosa-Matamoros, Matamoros, TM",
+        "description": "Manufacturing and logistics hub supporting jobs and regional economic development.",
+        "image": "industrial.webp",
+        "link": "https://example.com/industrial"
+    }
+]

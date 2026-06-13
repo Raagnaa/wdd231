@@ -446,9 +446,7 @@ footer a {
     grid-template-areas:
         "intro"
         "visit"
-        "demo"
-        "features"
-        "gallery";
+        "cards";
     grid-template-columns: 1fr;
     padding: 1rem;
     width: 100%;
@@ -456,25 +454,41 @@ footer a {
 
 .intro {
     grid-area: intro;
-}
-
-.demographics {
-    grid-area: demo;
-}
-
-.features {
-    grid-area: features;
-}
-
-.gallery {
-    grid-area: gallery;
-}
-
-.discover-grid section {
     background: var(--white);
     padding: 1rem;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
+}
+
+.cards {
+    grid-area: cards;
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+        "c1"
+        "c2"
+        "c3"
+        "c4"
+        "c5"
+        "c6"
+        "c7"
+        "c8";
+    grid-template-columns: 1fr;
+}
+
+.place-card:nth-child(1) { grid-area: c1; }
+.place-card:nth-child(2) { grid-area: c2; }
+.place-card:nth-child(3) { grid-area: c3; }
+.place-card:nth-child(4) { grid-area: c4; }
+.place-card:nth-child(5) { grid-area: c5; }
+.place-card:nth-child(6) { grid-area: c6; }
+.place-card:nth-child(7) { grid-area: c7; }
+.place-card:nth-child(8) { grid-area: c8; }
+
+.discover-grid h1,
+.discover-grid h2 {
+    margin-top: 0;
+    color: var(--primary);
 }
 
 .visit-banner {
@@ -488,22 +502,52 @@ footer a {
     box-shadow: var(--shadow);
 }
 
-.discover-grid h1,
-.discover-grid h2 {
-    margin-top: 0;
-    color: var(--primary);
+.place-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: .75rem;
-}
-
-.gallery-grid img {
+.place-card img {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: var(--radius);
     object-fit: cover;
+}
+
+.place-card h2,
+.place-card .address,
+.place-card .description,
+.place-card .learn-more {
+    padding: 0 1rem;
+}
+
+.place-card h2 {
+    margin: 0.75rem 0 0.25rem;
+}
+
+.place-card .address {
+    margin: 0 0 0.5rem;
+    font-size: 0.9rem;
+    color: var(--accent);
+}
+
+.place-card .description {
+    margin: 0 0 1rem;
+    flex-grow: 1;
+}
+
+.place-card .learn-more {
+    display: inline-block;
+    margin: 0 1rem 1rem;
+    padding: 0.5rem 1rem;
+    background: var(--primary);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: var(--radius);
+    font-weight: 600;
+    width: fit-content;
 }
