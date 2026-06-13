@@ -439,3 +439,72 @@ footer a {
     border-radius: var(--radius);
     cursor: pointer;
 }
+
+.discover-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-areas:
+        "intro"
+        "visit"
+        "demo"
+        "features"
+        "gallery";
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    width: 100%;
+}
+
+.intro {
+    grid-area: intro;
+}
+
+.visit-banner {
+    grid-area: visit;
+}
+
+.demographics {
+    grid-area: demo;
+}
+
+.features {
+    grid-area: features;
+}
+
+.gallery {
+    grid-area: gallery;
+}
+
+.discover-grid section,
+.visit-banner {
+    background: var(--white);
+    padding: 1rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.visit-banner {
+    background: var(--accent);
+    color: var(--white);
+    font-weight: 600;
+    text-align: center;
+}
+
+.discover-grid h1,
+.discover-grid h2 {
+    margin-top: 0;
+    color: var(--primary);
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .75rem;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius);
+    object-fit: cover;
+}

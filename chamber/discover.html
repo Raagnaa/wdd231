@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+    <title>Discover | Matamoros Chamber</title>
+    <meta name="description"
+        content="Discover Matamoros: demographics, local features, and area highlights for visitors and new residents.">
+    <meta name="author" content="Emmanuel Garcia">
+    <meta property="og:title" content="Matamoros Chamber Discover">
+    <meta property="og:description"
+        content="Learn about Matamoros, Tamaulipas through chamber resources and area information.">
+    <meta property="og:image" content="https://raagnaa.github.io/wdd231/chamber/images/og-index.svg">
+    <meta property="og:url" content="https://raagnaa.github.io/wdd231/chamber/discover.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+
+    <script src="scripts/discover.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <a class="logo" href="index.html">Matamoros Chamber</a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="discover.html" aria-current="page">Discover</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html">Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="discover-grid">
+        <section class="intro" aria-labelledby="intro-heading">
+            <h1 id="intro-heading">Discover Matamoros</h1>
+            <p>
+                Matamoros is a border city in Tamaulipas, Mexico, connected to the Rio Grande Valley through trade,
+                culture, and daily cross-border activity. This page highlights what makes the area a practical place to
+                visit, work, and build a business.
+            </p>
+        </section>
+
+        <aside id="visit-message" class="visit-banner" aria-live="polite"></aside>
+
+        <section class="demographics" aria-labelledby="demo-heading">
+            <h2 id="demo-heading">Demographics</h2>
+            <p><strong>Population:</strong> About 520,000 in the city metro area.</p>
+            <p><strong>Economy:</strong> Manufacturing, retail, logistics, and cross-border services.</p>
+            <p><strong>Growth:</strong> Steady demand for housing and local services from new residents.</p>
+            <p><strong>Language:</strong> Spanish is primary; English is common in business settings.</p>
+        </section>
+
+        <section class="features" aria-labelledby="features-heading">
+            <h2 id="features-heading">Area Features</h2>
+            <ul>
+                <li>International bridge access to Brownsville, Texas</li>
+                <li>Active downtown commerce and local network</li>
+                <li>Industrial and logistics corridors</li>
+                <li>Cultural events and family-oriented neighborhoods</li>
+                <li>Chamber support for new residents and small business</li>
+            </ul>
+        </section>
+
+        <section class="gallery" aria-labelledby="gallery-heading">
+            <h2 id="gallery-heading">Area Gallery</h2>
+            <div class="gallery-grid">
+                <img src="images/hero.webp" alt="Downtown Matamoros street view" width="300" height="200"
+                    loading="lazy">
+                <img src="images/mercado-centro.svg" alt="Local market in Matamoros" width="300" height="200"
+                    loading="lazy">
+                <img src="images/hotel-rio.svg" alt="Hotel near the Rio Grande" width="300" height="200" loading="lazy">
+                <img src="images/cafe-del-puente.svg" alt="Cafe in central Matamoros" width="300" height="200"
+                    loading="lazy">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Matamoros Chamber of Commerce</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+
+</body>
+
+</html>
