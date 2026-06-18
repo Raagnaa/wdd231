@@ -57,8 +57,15 @@ list.addEventListener("click", (event) => {
 });
 
 async function loadEquipment() {
+    // async - function that can wait for data
+
     try {
+        // try - run this code first
+
+        // fetch - get data from equipment.json
         const response = await fetch("data/equipment.json");
+
+        // await - wait until fetch is done
 
         if (!response.ok) {
             throw new Error("Could not load equipment file");
@@ -68,6 +75,7 @@ async function loadEquipment() {
         equipment = data;
         renderEquipment();
     } catch (error) {
+        // catch - runs if something goes wrong
         console.error(error);
         list.innerHTML = "<p>Sorry, the equipment list could not load.</p>";
     }
