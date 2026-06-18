@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Orange vest",
+        "category": "safety",
+        "why": "Other hunters can see you better in the trees.",
+        "tip": "Put it on before you leave the truck."
+    },
+    {
+        "name": "Hunting boots",
+        "category": "clothing",
+        "why": "They help on mud, rocks, and long walks.",
+        "tip": "Wear them around the house first so they do not hurt."
+    },
+    {
+        "name": "Backpack",
+        "category": "gear",
+        "why": "You need something to carry water, food, and extra clothes.",
+        "tip": "Pack light. You will be walking a lot."
+    },
+    {
+        "name": "Water bottle",
+        "category": "gear",
+        "why": "You get tired fast if you do not drink enough water.",
+        "tip": "Bring more than you think you need."
+    },
+    {
+        "name": "First aid kit",
+        "category": "safety",
+        "why": "Small cuts and blisters happen outdoors.",
+        "tip": "Check it once a year and replace old items."
+    },
+    {
+        "name": "Flashlight",
+        "category": "gear",
+        "why": "It gets dark fast in the woods.",
+        "tip": "Keep extra batteries in your bag."
+    },
+    {
+        "name": "Map or GPS",
+        "category": "navigation",
+        "why": "Easy to get turned around in a new area.",
+        "tip": "Learn the map before you go, not only on your phone."
+    },
+    {
+        "name": "Rain jacket",
+        "category": "clothing",
+        "why": "Weather changes quick outside.",
+        "tip": "A light jacket fits in any backpack."
+    },
+    {
+        "name": "Warm gloves",
+        "category": "clothing",
+        "why": "Cold hands make it hard to handle gear safely.",
+        "tip": "Bring a thin pair and a thicker pair if it is winter."
+    },
+    {
+        "name": "Hunting knife",
+        "category": "tools",
+        "why": "Useful for small tasks in the field.",
+        "tip": "Keep the blade covered when you are not using it."
+    },
+    {
+        "name": "Binoculars",
+        "category": "tools",
+        "why": "Help you spot animals from far away.",
+        "tip": "Practice focusing them at home."
+    },
+    {
+        "name": "Game bags",
+        "category": "gear",
+        "why": "Clean way to carry meat after a successful hunt.",
+        "tip": "Keep them in a dry spot in your pack."
+    },
+    {
+        "name": "Headlamp",
+        "category": "gear",
+        "why": "Frees your hands when walking in the dark.",
+        "tip": "Red light mode saves battery and does not scare animals as much."
+    },
+    {
+        "name": "Whistle",
+        "category": "safety",
+        "why": "Loud signal if you get lost or need help.",
+        "tip": "Attach it to your backpack strap."
+    },
+    {
+        "name": "Fire starter",
+        "category": "safety",
+        "why": "Warmth and a signal if you are stuck outside longer than planned.",
+        "tip": "Practice starting a fire before you depend on it."
+    }
+]

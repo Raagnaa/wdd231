@@ -1,0 +1,66 @@
+@media screen and (min-width: 37.5rem) {
+    .menu-toggle {
+        display: none;
+    }
+
+    #main-nav {
+        display: block;
+        position: static;
+        background: transparent;
+    }
+
+    #main-nav ul {
+        display: flex;
+        gap: .35rem;
+    }
+
+    #main-nav a {
+        padding: .5rem .85rem;
+        border-radius: var(--radius);
+    }
+
+    .hero {
+        position: relative;
+    }
+
+    .hero img {
+        height: 380px;
+    }
+
+    .hero-content {
+        position: absolute;
+        bottom: 1.25rem;
+        left: 1.25rem;
+        right: 1.25rem;
+        max-width: 520px;
+        background: rgba(255, 255, 255, 0.94);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #equipment-list.cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .technique-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 56rem) {
+    main {
+        padding: 1.5rem 1.25rem 2.5rem;
+    }
+
+    #equipment-list.cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .technique-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/hunting_logo.svg" type="image/svg+xml">
+    <title>Safety and Equipment | Hunting Basics</title>
+    <meta name="description" content="Hunting safety rules and basic equipment for beginners.">
+    <meta name="author" content="Emmanuel Garcia">
+
+    <meta property="og:title" content="Safety and Equipment | Hunting Basics">
+    <meta property="og:description" content="Hunting safety rules and basic equipment for beginners.">
+    <meta property="og:image" content="https://raagnaa.github.io/wdd231/hunting/images/hero.webp">
+    <meta property="og:url" content="https://raagnaa.github.io/wdd231/hunting/safety.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/equipment.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <a class="logo" href="index.html">
+                <img src="images/hunting_logo.svg" alt="Hunting Basics logo" width="42" height="42">
+                Hunting Basics
+            </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+            <nav id="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="techniques.html">Techniques</a></li>
+                    <li><a href="safety.html" aria-current="page">Safety and Equipment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-banner">
+            <h1>Safety and Equipment</h1>
+        </div>
+
+        <section class="intro">
+            <p>Safety comes first. This page has basic rules and a list of gear that beginners usually need.</p>
+        </section>
+
+        <section class="tips">
+            <h2>Safety rules</h2>
+            <ul>
+                <li>Treat every gun like it is loaded.</li>
+                <li>Keep your finger off the trigger until you are ready to shoot.</li>
+                <li>Know what is behind your target.</li>
+                <li>Wear orange so other hunters can see you.</li>
+                <li>Follow the laws in your area.</li>
+            </ul>
+        </section>
+
+        <section class="tips">
+            <h2>Basic equipment</h2>
+            <p>Click Details for more info. Use Save item to keep favorites in your browser.</p>
+            <div id="equipment-list" class="cards"></div>
+        </section>
+    </main>
+
+    <dialog id="equipment-modal">
+        <button type="button" id="close-modal" aria-label="Close">X</button>
+        <h2 id="modal-name"></h2>
+        <p><strong>Category:</strong> <span id="modal-category"></span></p>
+        <p><strong>Why you need it:</strong> <span id="modal-why"></span></p>
+        <p><strong>Tip:</strong> <span id="modal-tip"></span></p>
+    </dialog>
+
+    <footer>
+        <p>Emmanuel Garcia | WDD 231</p>
+        <p>&copy; <span id="year"></span> Hunting Basics</p>
+        <p>
+            <a href="attributions.html">Attributions</a> ·
+            <a href="form.html">Ask a Question</a> ·
+            <a href="video.html">Project Video</a>
+        </p>
+    </footer>
+</body>
+
+</html>

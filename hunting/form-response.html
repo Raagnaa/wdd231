@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/hunting_logo.svg" type="image/svg+xml">
+    <title>Form Received | Hunting Basics</title>
+    <meta name="description" content="Confirmation page for the hunting basics contact form.">
+    <meta name="author" content="Emmanuel Garcia">
+
+    <meta property="og:title" content="Form Received | Hunting Basics">
+    <meta property="og:description" content="Confirmation page for the hunting basics contact form.">
+    <meta property="og:image" content="https://raagnaa.github.io/wdd231/hunting/images/hero.webp">
+    <meta property="og:url" content="https://raagnaa.github.io/wdd231/hunting/form-response.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/form-response.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-inner">
+            <a class="logo" href="index.html">
+                <img src="images/hunting_logo.svg" alt="Hunting Basics logo" width="42" height="42">
+                Hunting Basics
+            </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+            <nav id="main-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="techniques.html">Techniques</a></li>
+                    <li><a href="safety.html">Safety and Equipment</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-banner">
+            <h1>Thanks!</h1>
+        </div>
+        <p>Here is what you sent:</p>
+        <div id="summary"></div>
+        <p><a href="index.html">Back to Home</a></p>
+    </main>
+
+    <footer>
+        <p>Emmanuel Garcia | WDD 231</p>
+        <p>&copy; <span id="year"></span> Hunting Basics</p>
+        <p>
+            <a href="attributions.html">Attributions</a> ·
+            <a href="form.html">Ask a Question</a> ·
+            <a href="video.html">Project Video</a>
+        </p>
+    </footer>
+</body>
+
+</html>
